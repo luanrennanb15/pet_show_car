@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trabalhe Conosco — PetShowCar</title>
+<meta name="description" content="Faça parte da equipe PetShowCar. Envie sua candidatura direto pelo WhatsApp.">
+<link rel="icon" href="fotos/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<aside class="sidebar">
+  <div class="side-brand">
+    <img src="fotos/logo.jpg" alt="Logo PetShowCar">
+    <div class="name">PET<b>SHOWCAR</b></div>
+    <small>Car Service</small>
+  </div>
+  <nav class="side-nav">
+    <a href="index.html"><span class="ic">🏠</span> Início</a>
+    <a href="dicas.html"><span class="ic">💡</span> Dicas para seu carro</a>
+    <a href="videos.html"><span class="ic">▶️</span> Vídeos</a>
+    <a class="active" href="trabalhe-conosco.html"><span class="ic">🧰</span> Trabalhe Conosco</a>
+    <a href="orcamento.html"><span class="ic">📝</span> Orçamento</a>
+  </nav>
+  <div class="side-foot">
+    <a class="side-wpp" data-wpp data-msg="Olá! Vim pelo site e quero um orçamento.">💬 WhatsApp</a>
+    <div class="side-social">
+      <a href="https://www.instagram.com/petshowcar/" target="_blank" title="Instagram">📸</a>
+      <a href="https://www.tiktok.com/@petshowcar" target="_blank" title="TikTok">🎵</a>
+      <a href="https://www.youtube.com/channel/UCSHwjOTjkbg80PvMPB7cNIg" target="_blank" title="YouTube">▶️</a>
+    </div>
+  </div>
+</aside>
+
+<div class="topbar">
+  <div class="tb-brand"><img src="fotos/logo.jpg" alt="PetShowCar">PET<b>SHOWCAR</b></div>
+  <button class="menu-btn" id="menuBtn" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+</div>
+<div class="overlay" id="overlay"></div>
+
+<main class="main">
+
+  <section class="page-head">
+    <div class="container">
+      <span class="eyebrow">Venha para o time</span>
+      <h1>Trabalhe <span class="g">conosco</span></h1>
+      <p>Gosta de mecânica e quer crescer numa oficina que valoriza qualidade? Envie sua candidatura — ela cai direto no nosso WhatsApp.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="form-wrap">
+        <form class="wpp-form" data-intro="🧰 *Trabalhe Conosco — nova candidatura pelo site*">
+          <div class="field-row">
+            <div class="field">
+              <label>Nome completo <span class="req">*</span></label>
+              <input type="text" name="nome" data-label="Nome" required placeholder="Seu nome">
+            </div>
+            <div class="field">
+              <label>Telefone / WhatsApp <span class="req">*</span></label>
+              <input type="tel" name="telefone" data-label="Telefone" required placeholder="(00) 00000-0000">
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label>Vaga de interesse</label>
+              <select name="vaga" data-label="Vaga">
+                <option value="">Selecione...</option>
+                <option>Mecânico</option>
+                <option>Auxiliar de mecânico</option>
+                <option>Eletricista automotivo</option>
+                <option>Estágio / Aprendiz</option>
+                <option>Atendimento / Administrativo</option>
+                <option>Outra</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Tempo de experiência</label>
+              <input type="text" name="experiencia" data-label="Experiência" placeholder="Ex: 3 anos, ou sem experiência">
+            </div>
+          </div>
+          <div class="field">
+            <label>Conte um pouco sobre você</label>
+            <textarea name="mensagem" data-label="Mensagem" placeholder="Fale da sua experiência, o que sabe fazer e por que quer trabalhar com a gente."></textarea>
+          </div>
+          <button type="submit" class="btn btn-wpp form-submit">💬 Enviar candidatura pelo WhatsApp</button>
+          <p class="form-note">Ao enviar, o WhatsApp abre com sua mensagem pronta. É só confirmar o envio.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <p>PetShowCar Car Service — Melhores preços da região, mão de obra 100% qualificada.</p>
+    <p class="sm">© 2026 PetShowCar. Todos os direitos reservados.</p>
+  </footer>
+
+</main>
+
+<a class="float" data-wpp data-msg="Olá! Vim pelo site e quero um orçamento." aria-label="WhatsApp">💬</a>
+<script src="assets/site.js"></script>
+</body>
+</html>
