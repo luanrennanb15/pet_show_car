@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vídeos — PetShowCar</title>
+<meta name="description" content="Vídeos da oficina PetShowCar: bastidores dos serviços e dicas de manutenção no YouTube, TikTok e Instagram.">
+<link rel="icon" href="fotos/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<aside class="sidebar">
+  <div class="side-brand">
+    <img src="fotos/logo.jpg" alt="Logo PetShowCar">
+    <div class="name">PET<b>SHOWCAR</b></div>
+    <small>Car Service</small>
+  </div>
+  <nav class="side-nav">
+    <a href="index.html"><span class="ic">🏠</span> Início</a>
+    <a href="dicas.html"><span class="ic">💡</span> Dicas para seu carro</a>
+    <a class="active" href="videos.html"><span class="ic">▶️</span> Vídeos</a>
+    <a href="trabalhe-conosco.html"><span class="ic">🧰</span> Trabalhe Conosco</a>
+    <a href="orcamento.html"><span class="ic">📝</span> Orçamento</a>
+  </nav>
+  <div class="side-foot">
+    <a class="side-wpp" data-wpp data-msg="Olá! Vim pelo site e quero um orçamento.">💬 WhatsApp</a>
+    <div class="side-social">
+      <a href="https://www.instagram.com/petshowcar/" target="_blank" title="Instagram">📸</a>
+      <a href="https://www.tiktok.com/@petshowcar" target="_blank" title="TikTok">🎵</a>
+      <a href="https://www.youtube.com/channel/UCSHwjOTjkbg80PvMPB7cNIg" target="_blank" title="YouTube">▶️</a>
+    </div>
+  </div>
+</aside>
+
+<div class="topbar">
+  <div class="tb-brand"><img src="fotos/logo.jpg" alt="PetShowCar">PET<b>SHOWCAR</b></div>
+  <button class="menu-btn" id="menuBtn" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+</div>
+<div class="overlay" id="overlay"></div>
+
+<main class="main">
+
+  <section class="page-head">
+    <div class="container">
+      <span class="eyebrow">Bastidores da oficina</span>
+      <h1>Nossos <span class="g">vídeos</span></h1>
+      <p>Acompanhe o serviço por dentro e pegue dicas pra manter seu carro em dia. Conteúdo direto do canal PetShowCar.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 style="margin-bottom:32px">Últimos <span class="g">vídeos do YouTube</span></h2>
+      <!-- Reprodutor com os vídeos mais recentes do canal (atualiza sozinho) -->
+      <div class="video-embed" style="max-width:900px;margin:0 auto">
+        <iframe src="https://www.youtube.com/embed/videoseries?list=UUSHwjOTjkbg80PvMPB7cNIg"
+          title="Vídeos PetShowCar" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <h2 style="margin:60px 0 10px">Vídeos em <span class="g">destaque</span></h2>
+      <p class="sub">Escolha os vídeos favoritos pra fixar aqui. <em>Troque os quadros abaixo pelo código "incorporar" de cada vídeo do YouTube.</em></p>
+      <div class="videos">
+        <a class="video-ph" href="https://www.youtube.com/channel/UCSHwjOTjkbg80PvMPB7cNIg" target="_blank"><div class="play">▶</div><span>Vídeo em destaque 1<br><small>[colar embed do YouTube]</small></span></a>
+        <a class="video-ph" href="https://www.youtube.com/channel/UCSHwjOTjkbg80PvMPB7cNIg" target="_blank"><div class="play">▶</div><span>Vídeo em destaque 2<br><small>[colar embed do YouTube]</small></span></a>
+      </div>
+
+      <div class="social-row">
+        <a class="schip" href="https://www.instagram.com/petshowcar/" target="_blank">📸 Instagram</a>
+        <a class="schip" href="https://www.tiktok.com/@petshowcar" target="_blank">🎵 TikTok</a>
+        <a class="schip" href="https://www.youtube.com/channel/UCSHwjOTjkbg80PvMPB7cNIg" target="_blank">▶ YouTube</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Gostou do <span class="g">trabalho?</span></h2>
+      <p>Chame no WhatsApp e agende o serviço do seu carro.</p>
+      <a class="btn btn-wpp" data-wpp data-msg="Olá! Vi seus vídeos e quero um orçamento.">💬 Falar no WhatsApp</a>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <p>PetShowCar Car Service — Melhores preços da região, mão de obra 100% qualificada.</p>
+    <p class="sm">© 2026 PetShowCar. Todos os direitos reservados.</p>
+  </footer>
+
+</main>
+
+<a class="float" data-wpp data-msg="Olá! Vim pelo site e quero um orçamento." aria-label="WhatsApp">💬</a>
+<script src="assets/site.js"></script>
+</body>
+</html>

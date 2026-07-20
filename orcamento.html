@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orçamento — PetShowCar</title>
+<meta name="description" content="Peça um orçamento para o seu carro na PetShowCar. Rápido e sem compromisso, direto pelo WhatsApp.">
+<link rel="icon" href="fotos/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<aside class="sidebar">
+  <div class="side-brand">
+    <img src="fotos/logo.jpg" alt="Logo PetShowCar">
+    <div class="name">PET<b>SHOWCAR</b></div>
+    <small>Car Service</small>
+  </div>
+  <nav class="side-nav">
+    <a href="index.html"><span class="ic">🏠</span> Início</a>
+    <a href="dicas.html"><span class="ic">💡</span> Dicas para seu carro</a>
+    <a href="videos.html"><span class="ic">▶️</span> Vídeos</a>
+    <a href="trabalhe-conosco.html"><span class="ic">🧰</span> Trabalhe Conosco</a>
+    <a class="active" href="orcamento.html"><span class="ic">📝</span> Orçamento</a>
+  </nav>
+  <div class="side-foot">
+    <a class="side-wpp" data-wpp data-msg="Olá! Vim pelo site e quero um orçamento.">💬 WhatsApp</a>
+    <div class="side-social">
+      <a href="https://www.instagram.com/petshowcar/" target="_blank" title="Instagram">📸</a>
+      <a href="https://www.tiktok.com/@petshowcar" target="_blank" title="TikTok">🎵</a>
+      <a href="https://www.youtube.com/channel/UCSHwjOTjkbg80PvMPB7cNIg" target="_blank" title="YouTube">▶️</a>
+    </div>
+  </div>
+</aside>
+
+<div class="topbar">
+  <div class="tb-brand"><img src="fotos/logo.jpg" alt="PetShowCar">PET<b>SHOWCAR</b></div>
+  <button class="menu-btn" id="menuBtn" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+</div>
+<div class="overlay" id="overlay"></div>
+
+<main class="main">
+
+  <section class="page-head">
+    <div class="container">
+      <span class="eyebrow">Rápido e sem compromisso</span>
+      <h1>Peça seu <span class="g">orçamento</span></h1>
+      <p>Conte o que seu carro precisa e mande pra gente. Você recebe o orçamento direto no WhatsApp.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="form-wrap">
+        <form class="wpp-form" data-intro="📝 *Pedido de orçamento pelo site*">
+          <div class="field-row">
+            <div class="field">
+              <label>Seu nome <span class="req">*</span></label>
+              <input type="text" name="nome" data-label="Nome" required placeholder="Seu nome">
+            </div>
+            <div class="field">
+              <label>Telefone / WhatsApp <span class="req">*</span></label>
+              <input type="tel" name="telefone" data-label="Telefone" required placeholder="(00) 00000-0000">
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label>Carro (marca e modelo)</label>
+              <input type="text" name="veiculo" data-label="Veículo" placeholder="Ex: Fiat Uno, VW Gol...">
+            </div>
+            <div class="field">
+              <label>Ano</label>
+              <input type="text" name="ano" data-label="Ano" placeholder="Ex: 2015">
+            </div>
+          </div>
+          <div class="field">
+            <label>Serviço desejado</label>
+            <select name="servico" data-label="Serviço">
+              <option value="">Selecione...</option>
+              <option>Injeção eletrônica</option>
+              <option>Alternador / motor de arranque</option>
+              <option>Motor</option>
+              <option>Scanner / diagnóstico</option>
+              <option>Suspensão</option>
+              <option>Embreagem</option>
+              <option>Freios</option>
+              <option>Revisão geral</option>
+              <option>Não sei / preciso de ajuda</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Descreva o problema ou o serviço</label>
+            <textarea name="descricao" data-label="Descrição" placeholder="Conte o que está acontecendo com o carro, barulhos, luzes no painel, etc."></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold form-submit">📝 Enviar pedido pelo WhatsApp</button>
+          <p class="form-note">Ao enviar, o WhatsApp abre com seu pedido pronto. É só confirmar o envio.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <p>PetShowCar Car Service — Melhores preços da região, mão de obra 100% qualificada.</p>
+    <p class="sm">© 2026 PetShowCar. Todos os direitos reservados.</p>
+  </footer>
+
+</main>
+
+<a class="float" data-wpp data-msg="Olá! Vim pelo site e quero um orçamento." aria-label="WhatsApp">💬</a>
+<script src="assets/site.js"></script>
+</body>
+</html>
