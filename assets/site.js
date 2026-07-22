@@ -3,7 +3,7 @@
    >>> TROQUE O NÚMERO DO WHATSAPP AQUI (só dígitos, com DDD e 55) <<<
    Ex.: Brasil, DDD 11, número 91234-5678  ->  "5511912345678"
    ========================================================= */
-var WHATSAPP = "5500000000000";
+var WHATSAPP = "5515981080355";
 
 (function () {
   function waLink(msg) {
