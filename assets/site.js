@@ -31,6 +31,22 @@ var WHATSAPP = "5515981080355";
       a.addEventListener("click", function () { setMenu(false); });
     });
 
+    /* 3b) Capas de vídeo (click-to-play) */
+    document.querySelectorAll(".vfacade").forEach(function (f) {
+      f.addEventListener("click", function () {
+        var url = f.getAttribute("data-embed");
+        var frame = f.closest(".vframe");
+        if (!url || !frame) return;
+        var ifr = document.createElement("iframe");
+        ifr.src = url;
+        ifr.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+        ifr.setAttribute("allowfullscreen", "");
+        ifr.setAttribute("scrolling", "no");
+        frame.innerHTML = "";
+        frame.appendChild(ifr);
+      });
+    });
+
     /* 3) Formulários que enviam pro WhatsApp */
     document.querySelectorAll("form.wpp-form").forEach(function (form) {
       form.addEventListener("submit", function (e) {
