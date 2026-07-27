@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veículos à venda — PetShowCar</title>
+<meta name="description" content="Carros à venda na PetShowCar. Veículos revisados e prontos pra rodar. Fale com a gente pelo WhatsApp.">
+<link rel="icon" href="fotos/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<aside class="sidebar">
+  <div class="side-brand">
+    <img src="fotos/logo.jpg" alt="Logo PetShowCar">
+    <div class="name">PET<b>SHOWCAR</b></div>
+    <small>Car Service</small>
+  </div>
+  <nav class="side-nav">
+    <a href="index.html"><span class="ic">🏠</span> Início</a>
+    <a class="active" href="veiculos.html"><span class="ic">🚗</span> Veículos à venda</a>
+    <a href="dicas.html"><span class="ic">💡</span> Dicas para seu carro</a>
+    <a href="videos.html"><span class="ic">▶️</span> Vídeos</a>
+    <a href="trabalhe-conosco.html"><span class="ic">🧰</span> Trabalhe Conosco</a>
+    <a href="orcamento.html"><span class="ic">📝</span> Orçamento</a>
+  </nav>
+  <div class="side-foot">
+    <a class="side-wpp" data-wpp data-msg="Olá! Vim pelo site e quero um orçamento.">💬 WhatsApp</a>
+    <div class="side-social">
+      <a href="https://www.instagram.com/petshowcar/" target="_blank" title="Instagram">📸</a>
+      <a href="https://www.tiktok.com/@petshowcar" target="_blank" title="TikTok">🎵</a>
+      <a href="https://www.youtube.com/channel/UCSHwjOTjkbg80PvMPB7cNIg" target="_blank" title="YouTube">▶️</a>
+    </div>
+  </div>
+</aside>
+
+<div class="topbar">
+  <div class="tb-brand"><img src="fotos/logo.jpg" alt="PetShowCar">PET<b>SHOWCAR</b></div>
+  <button class="menu-btn" id="menuBtn" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+</div>
+<div class="overlay" id="overlay"></div>
+
+<main class="main">
+
+  <section class="page-head">
+    <div class="container">
+      <span class="eyebrow">Vitrine da oficina</span>
+      <h1>Veículos <span class="g">à venda</span></h1>
+      <p>Carros selecionados e revisados na nossa oficina, prontos pra rodar. Gostou de algum? Chame no WhatsApp e agende uma visita.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="car-grid">
+
+        <!-- Para colocar a foto real: troque o conteúdo de <div class="car-photo"> por <img src="fotos/carro-1.jpg" alt="..."> mantendo a <span class="car-tag"> -->
+        <div class="car-card">
+          <div class="car-photo"><span class="ph-ic">🚗</span><small>[foto do carro 1]</small><span class="car-tag">À VENDA</span></div>
+          <div class="car-body">
+            <h3>[Marca e Modelo]</h3>
+            <div class="car-sub">[versão / motor]</div>
+            <div class="car-specs"><span>📅 [ano]</span><span>🛣️ [km]</span><span>⛽ [combustível]</span></div>
+            <div class="car-price">R$ [preço]</div>
+            <a class="btn btn-wpp" data-wpp data-msg="Olá! Tenho interesse no carro 1 (Marca e Modelo) anunciado no site. Ainda está disponível?">💬 Tenho interesse</a>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <div class="car-photo"><span class="ph-ic">🚗</span><small>[foto do carro 2]</small><span class="car-tag">À VENDA</span></div>
+          <div class="car-body">
+            <h3>[Marca e Modelo]</h3>
+            <div class="car-sub">[versão / motor]</div>
+            <div class="car-specs"><span>📅 [ano]</span><span>🛣️ [km]</span><span>⛽ [combustível]</span></div>
+            <div class="car-price">R$ [preço]</div>
+            <a class="btn btn-wpp" data-wpp data-msg="Olá! Tenho interesse no carro 2 (Marca e Modelo) anunciado no site. Ainda está disponível?">💬 Tenho interesse</a>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <div class="car-photo"><span class="ph-ic">🚗</span><small>[foto do carro 3]</small><span class="car-tag">À VENDA</span></div>
+          <div class="car-body">
+            <h3>[Marca e Modelo]</h3>
+            <div class="car-sub">[versão / motor]</div>
+            <div class="car-specs"><span>📅 [ano]</span><span>🛣️ [km]</span><span>⛽ [combustível]</span></div>
+            <div class="car-price">R$ [preço]</div>
+            <a class="btn btn-wpp" data-wpp data-msg="Olá! Tenho interesse no carro 3 (Marca e Modelo) anunciado no site. Ainda está disponível?">💬 Tenho interesse</a>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <div class="car-photo"><span class="ph-ic">🚗</span><small>[foto do carro 4]</small><span class="car-tag">À VENDA</span></div>
+          <div class="car-body">
+            <h3>[Marca e Modelo]</h3>
+            <div class="car-sub">[versão / motor]</div>
+            <div class="car-specs"><span>📅 [ano]</span><span>🛣️ [km]</span><span>⛽ [combustível]</span></div>
+            <div class="car-price">R$ [preço]</div>
+            <a class="btn btn-wpp" data-wpp data-msg="Olá! Tenho interesse no carro 4 (Marca e Modelo) anunciado no site. Ainda está disponível?">💬 Tenho interesse</a>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <div class="car-photo"><span class="ph-ic">🚗</span><small>[foto do carro 5]</small><span class="car-tag">À VENDA</span></div>
+          <div class="car-body">
+            <h3>[Marca e Modelo]</h3>
+            <div class="car-sub">[versão / motor]</div>
+            <div class="car-specs"><span>📅 [ano]</span><span>🛣️ [km]</span><span>⛽ [combustível]</span></div>
+            <div class="car-price">R$ [preço]</div>
+            <a class="btn btn-wpp" data-wpp data-msg="Olá! Tenho interesse no carro 5 (Marca e Modelo) anunciado no site. Ainda está disponível?">💬 Tenho interesse</a>
+          </div>
+        </div>
+
+        <div class="car-card">
+          <div class="car-photo"><span class="ph-ic">🚗</span><small>[foto do carro 6]</small><span class="car-tag">À VENDA</span></div>
+          <div class="car-body">
+            <h3>[Marca e Modelo]</h3>
+            <div class="car-sub">[versão / motor]</div>
+            <div class="car-specs"><span>📅 [ano]</span><span>🛣️ [km]</span><span>⛽ [combustível]</span></div>
+            <div class="car-price">R$ [preço]</div>
+            <a class="btn btn-wpp" data-wpp data-msg="Olá! Tenho interesse no carro 6 (Marca e Modelo) anunciado no site. Ainda está disponível?">💬 Tenho interesse</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Quer <span class="g">vender</span> ou <span class="g">trocar?</span></h2>
+      <p>Fale com a gente no WhatsApp e tire suas dúvidas sobre qualquer veículo.</p>
+      <a class="btn btn-wpp" data-wpp data-msg="Olá! Quero falar sobre os carros à venda.">💬 Falar no WhatsApp</a>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <p>PetShowCar Car Service — Melhores preços da região, mão de obra 100% qualificada.</p>
+    <p class="sm">© 2026 PetShowCar. Todos os direitos reservados.</p>
+  </footer>
+
+</main>
+
+<a class="float" data-wpp data-msg="Olá! Vim pelo site e quero um orçamento." aria-label="WhatsApp">💬</a>
+<script src="assets/site.js"></script>
+</body>
+</html>
