@@ -60,6 +60,19 @@ var WHATSAPP = "5515981080355";
       bindFacade(frame);
     });
 
+    /* 3c) Carrossel de reels (setas laterais) */
+    document.querySelectorAll(".reel-carousel").forEach(function (car) {
+      var track = car.querySelector(".reel-track");
+      var prev = car.querySelector(".prev");
+      var next = car.querySelector(".next");
+      function stepSize() {
+        var first = track.querySelector("*");
+        return first ? first.offsetWidth + 20 : 256;
+      }
+      if (prev) prev.addEventListener("click", function () { track.scrollBy({ left: -stepSize(), behavior: "smooth" }); });
+      if (next) next.addEventListener("click", function () { track.scrollBy({ left: stepSize(), behavior: "smooth" }); });
+    });
+
     /* 3) Formulários que enviam pro WhatsApp */
     document.querySelectorAll("form.wpp-form").forEach(function (form) {
       form.addEventListener("submit", function (e) {
