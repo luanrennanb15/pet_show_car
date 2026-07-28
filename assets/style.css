@@ -261,6 +261,17 @@ h2 .g,.g{background:var(--gold-grad);-webkit-background-clip:text;background-cli
 .reel-more .rm-ic{font-size:2.4rem;margin-bottom:12px}
 .reel-more h3{font-family:'Oswald';letter-spacing:.5px;font-size:1.15rem;margin-bottom:6px}
 .reel-more p{color:var(--muted);font-size:.88rem;margin-bottom:18px}
+.reel-link{position:relative;aspect-ratio:9/16;border-radius:16px;overflow:hidden;border:1px solid var(--line);
+  background:radial-gradient(circle at 50% 35%,#1c1c1f,#0b0b0d);display:block;transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease}
+.reel-link::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,11,.12),rgba(10,10,11,.68));transition:.3s}
+.reel-link:hover{transform:translateY(-6px);border-color:var(--gold-deep);box-shadow:0 24px 54px rgba(0,0,0,.5)}
+.reel-link:hover::before{background:linear-gradient(180deg,rgba(10,10,11,.05),rgba(10,10,11,.55))}
+.reel-link .badge-ig{position:absolute;top:18px;left:18px;font-size:1.3rem;z-index:2;opacity:.92}
+.reel-link .pbtn{position:absolute;top:44%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;
+  background:var(--gold-grad);color:#1a1405;display:flex;align-items:center;justify-content:center;font-size:1.35rem;z-index:2;
+  box-shadow:0 10px 28px rgba(0,0,0,.5);transition:transform .25s ease}
+.reel-link:hover .pbtn{transform:translate(-50%,-50%) scale(1.1)}
+.reel-link .vlabel{position:absolute;left:0;right:0;bottom:0;z-index:2;color:#fff;font-family:'Oswald';letter-spacing:.5px;padding:16px 18px;font-size:.9rem;text-align:left}
 @media(max-width:520px){.reel-track > *,.reel-track .vframe{width:190px}.carousel-arrow{width:42px;height:42px}}
 
 /* ================= VEÍCULOS À VENDA ================= */
