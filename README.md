@@ -30,12 +30,11 @@ Site desenvolvido do zero, com identidade visual **preta e dourada** inspirada n
 - Integração dos botões e formulários com o WhatsApp
 - Página de Dicas com imagens
 - Galeria do Instagram
-- Mapa e horário de funcionamento
+- Endereço, mapa e horário de funcionamento
+- Depoimentos reais e nota do Google (5,0 · 111 avaliações)
 
 **Em andamento / próximos passos**
 - Cadastro dos veículos à venda (fotos e valores)
-- Endereço completo escrito
-- Depoimentos reais de clientes
 - Publicação do site (deploy)
 
 ## 👤 Autor
