@@ -2,6 +2,8 @@
 
 > 🚧 **Projeto em andamento** — site real, desenvolvido para um cliente (oficina mecânica **PetShowCar / Car Service**).
 
+🔗 **Site no ar:** [luanrennanb15.github.io/pet_show_car](https://luanrennanb15.github.io/pet_show_car/)
+
 Site institucional premium para uma oficina mecânica, com foco em gerar contato via WhatsApp, apresentar os serviços e divulgar os conteúdos das redes sociais.
 
 ## ✨ Sobre o projeto
