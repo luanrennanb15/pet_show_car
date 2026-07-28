@@ -242,6 +242,27 @@ h2 .g,.g{background:var(--gold-grad);-webkit-background-clip:text;background-cli
 @media(max-width:700px){.two-videos{grid-template-columns:1fr;max-width:540px}}
 .video-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:44px}
 
+/* ===== Carrossel de Reels ===== */
+.reel-carousel{position:relative;margin-top:40px}
+.reel-track{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:6px 2px 14px;scrollbar-width:none;-ms-overflow-style:none}
+.reel-track::-webkit-scrollbar{display:none}
+.reel-track > *{flex:0 0 auto;width:236px;scroll-snap-align:start}
+.reel-track .vframe{aspect-ratio:9/16;width:236px}
+.carousel-arrow{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;
+  border:1px solid var(--gold-deep);background:rgba(10,10,11,.82);color:var(--gold);font-size:1.2rem;cursor:pointer;
+  z-index:6;display:flex;align-items:center;justify-content:center;transition:.2s;box-shadow:0 8px 22px rgba(0,0,0,.5)}
+.carousel-arrow:hover{background:var(--gold-grad);color:#1a1405;border-color:transparent}
+.carousel-arrow.prev{left:-8px}
+.carousel-arrow.next{right:-8px}
+.reel-more{aspect-ratio:9/16;border-radius:16px;border:1px solid var(--gold-deep);
+  background:linear-gradient(180deg,#17150f,#0e0e10);display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:26px 20px;transition:transform .28s ease,box-shadow .28s ease}
+.reel-more:hover{transform:translateY(-6px);box-shadow:0 28px 62px rgba(0,0,0,.55)}
+.reel-more .rm-ic{font-size:2.4rem;margin-bottom:12px}
+.reel-more h3{font-family:'Oswald';letter-spacing:.5px;font-size:1.15rem;margin-bottom:6px}
+.reel-more p{color:var(--muted);font-size:.88rem;margin-bottom:18px}
+@media(max-width:520px){.reel-track > *,.reel-track .vframe{width:190px}.carousel-arrow{width:42px;height:42px}}
+
 /* ================= VEÍCULOS À VENDA ================= */
 .car-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:10px}
 .car-card{position:relative;background:linear-gradient(180deg,#151517,#101012);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease}
