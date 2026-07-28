@@ -237,6 +237,10 @@ h2 .g,.g{background:var(--gold-grad);-webkit-background-clip:text;background-cli
 .ig-posts{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:640px;margin:42px auto 0}
 .ig-posts .vframe{aspect-ratio:4/5}
 @media(max-width:520px){.ig-posts{grid-template-columns:1fr;max-width:360px}}
+.two-videos{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;max-width:920px;margin:44px auto 0}
+.two-videos .vframe{aspect-ratio:16/9}
+@media(max-width:700px){.two-videos{grid-template-columns:1fr;max-width:540px}}
+.video-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:44px}
 
 /* ================= VEÍCULOS À VENDA ================= */
 .car-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:10px}

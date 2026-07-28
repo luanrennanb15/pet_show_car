@@ -31,12 +31,20 @@ var WHATSAPP = "5515981080355";
       a.addEventListener("click", function () { setMenu(false); });
     });
 
-    /* 3b) Capas de vídeo (click-to-play) */
-    document.querySelectorAll(".vfacade").forEach(function (f) {
+    /* 3b) Capas de vídeo (click-to-play, só um toca por vez) */
+    function bindFacade(frame) {
+      var f = frame.querySelector(".vfacade");
+      if (!f) return;
       f.addEventListener("click", function () {
         var url = f.getAttribute("data-embed");
-        var frame = f.closest(".vframe");
-        if (!url || !frame) return;
+        if (!url) return;
+        // Pausa/reseta qualquer vídeo que esteja tocando
+        document.querySelectorAll(".vframe.playing").forEach(function (fr) {
+          fr.innerHTML = fr.getAttribute("data-facade");
+          fr.classList.remove("playing");
+          bindFacade(fr);
+        });
+        // Carrega e toca o vídeo clicado
         var ifr = document.createElement("iframe");
         ifr.src = url;
         ifr.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
@@ -44,7 +52,12 @@ var WHATSAPP = "5515981080355";
         ifr.setAttribute("scrolling", "no");
         frame.innerHTML = "";
         frame.appendChild(ifr);
+        frame.classList.add("playing");
       });
+    }
+    document.querySelectorAll(".vframe").forEach(function (frame) {
+      frame.setAttribute("data-facade", frame.innerHTML);
+      bindFacade(frame);
     });
 
     /* 3) Formulários que enviam pro WhatsApp */
