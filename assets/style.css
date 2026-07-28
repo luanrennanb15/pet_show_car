@@ -262,7 +262,7 @@ h2 .g,.g{background:var(--gold-grad);-webkit-background-clip:text;background-cli
 .reel-more h3{font-family:'Oswald';letter-spacing:.5px;font-size:1.15rem;margin-bottom:6px}
 .reel-more p{color:var(--muted);font-size:.88rem;margin-bottom:18px}
 .reel-link{position:relative;aspect-ratio:9/16;border-radius:16px;overflow:hidden;border:1px solid var(--line);
-  background:radial-gradient(circle at 50% 35%,#1c1c1f,#0b0b0d);display:block;transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease}
+  background:#0b0b0d;background-size:cover;background-position:center;display:block;transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease}
 .reel-link::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,11,.12),rgba(10,10,11,.68));transition:.3s}
 .reel-link:hover{transform:translateY(-6px);border-color:var(--gold-deep);box-shadow:0 24px 54px rgba(0,0,0,.5)}
 .reel-link:hover::before{background:linear-gradient(180deg,rgba(10,10,11,.05),rgba(10,10,11,.55))}
