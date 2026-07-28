@@ -4,6 +4,12 @@
 
 🔗 **Site no ar:** [luanrennanb15.github.io/pet_show_car](https://luanrennanb15.github.io/pet_show_car/)
 
+<p>
+  <img src="fotos/qrcode-site.png" width="200" alt="QR Code — aponte a câmera e acesse o site">
+</p>
+
+> 📱 Aponte a câmera do celular para o QR Code acima e acesse o site.
+
 Site institucional premium para uma oficina mecânica, com foco em gerar contato via WhatsApp, apresentar os serviços e divulgar os conteúdos das redes sociais.
 
 ## ✨ Sobre o projeto
