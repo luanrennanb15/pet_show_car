@@ -297,6 +297,12 @@ h2 .g,.g{background:var(--gold-grad);-webkit-background-clip:text;background-cli
 @media(max-width:900px){.car-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.car-grid{grid-template-columns:1fr}}
 
+/* ================= MARCAS ATENDIDAS ================= */
+.brands{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;max-width:840px;margin:0 auto}
+.brand-chip{border:1px solid var(--line);border-radius:40px;padding:12px 24px;font-family:'Oswald';letter-spacing:1px;color:var(--txt);font-size:1rem;background:var(--card);transition:transform .25s ease,border-color .25s ease,color .25s ease}
+.brand-chip:hover{border-color:var(--gold-deep);color:var(--gold2);transform:translateY(-3px)}
+.brand-chip.more{background:var(--gold-grad);color:#1a1405;border-color:transparent;font-weight:700}
+
 /* ================= DEPOIMENTOS ================= */
 .deps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .dep{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px;position:relative}
